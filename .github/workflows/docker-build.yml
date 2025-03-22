@@ -30,7 +30,7 @@ jobs:
       # Step 4: Build Docker image
       - name: Build Docker image
         run: |
-          docker build -t ${{ github.repository }}:${{ github.sha }} .
+          docker build -t benmeddour/testdocker:${{ github.sha }} .
 
       # Step 5: Log in to Docker Hub using GitHub OAuth authentication
       - name: Log in to Docker Hub
